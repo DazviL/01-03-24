@@ -25,19 +25,19 @@
     <script type="text/babel">
         
         function Nome(){
-            return <h1>Davi</h1>
+            return <h1>MATEUS</h1>
         };
         function Sobrenome(){
-            return <h1>Leão</h1>
+            return <h1>HENRIQUE</h1>
         };
         function Endereco() {
-            return <h1>Moreira</h1>
+            return <h1>CAETANO</h1>
         };
 
         const Menu = (
             <nav 
             className={"navbar navbar-expand-lg bg-body-tertiary"}
-                >
+            >
   
                 <div 
                 className={"container-fluid"}
@@ -147,13 +147,15 @@
 
         const container = document.getElementById('mydiv');
         const root = ReactDOM.createRoot(container);
-        root.render(
-            Menu
-            );
-            
-           
+        root.render(menu);
+            <React.StrictMode>
+            <Nome/>
+            <Sobrenome/>
+            <Endereco/>
+            </React.StrictMode>
+                      
     </script>
 
 </body>
 
-</html>
+</html> 
